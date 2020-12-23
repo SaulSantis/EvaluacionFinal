@@ -1,7 +1,7 @@
 Evaluación Final / Módulo 3
 
 Integrantes:
-1. Saúl Santis
+1. Saúl Santibañez
 2. Juan Pablo Ibáñez
 3. Cristian Díaz
 4. Catherine Poblete
