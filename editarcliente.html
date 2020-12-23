@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Cliente</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">    
+
+</head>   
+    <body>      
+        <!-- =============================== HEADER =============================== -->         
+        <div class="topnav" id="myTopnav">
+            <a href="#"></a>    
+            <a href="index.html" >INICIO</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">CAPACITACIONES<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="crearusuario.html">CREAR USUARIO</a>
+                            <a href="listadousuarios.html">LISTADO DE USUARIOS</a>
+                            <a href="editarcliente.html" class="active">EDITAR CLIENTE</a>
+                            <a href="editaradministrativo.html">EDITAR ADMINISTRATIVO</a>
+                            <a href="editarprofesional.html">EDITAR PROFESIONAL</a>
+                        </div>
+                    </div>
+                        
+                    <div class="dropdown">
+                        <button class="dropbtn">ASESORIAS<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="listadoasesorias.html">LISTADO DE ASESORIAS</a>
+                            <a href="reportes.html">REPORTES</a>
+                            <a href="listadovisitas.html">LISTADO DE VISITAS</a>
+                            <a href="responderchecklist.html" >CHECKLIST</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">PAGOS<i class="fa fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="crearpago.html">CREAR PAGO</a>
+                            <a href="listadopago.html">LISTADO DE PAGOS</a>
+                        </div>
+                    </div>
+                    
+                                    
+                            <a href="contacto.html">CONTACTO</a>
+                            <a href="login.html">LOGIN</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                
+            </div>
+    
+<div class="caja-crea-cli"> 
+    <form class="cajaeditarcliente">             
+        <h1 class="titulo-editarCli">Editar Cliente</h1>          
+        <div class="run">
+            <label>Run</label>
+            <input class="inRuncli" type="text">
+        </div>
+        <div class="nombApe">
+            <label>Nombres y Apellidos</label>
+            <input class="inNombApe" type="text"> 
+        </div>
+        <div class="telefono">
+            <label>Telefono</label>
+            <input class="inTelef" type="text">   
+        </div>
+        <div class="afp">
+            <label> AFP</label>
+            <input class="inAfp" type="text"> 
+        </div>
+        <div class="sisSalud">
+            <label > Sistema de Salud</label>
+            <input class="inSisSalud" type="text"> 
+        </div>
+        <div class="direc">
+            <label > Dirección</label>
+            <input class="inDirec" type="text"> 
+        </div>
+        <div class="comuna">
+            <label > Comuna</label>
+            <input class="inComu" type="text"> 
+        </div>
+        <div class="edad">
+            <label > Edad</label>
+            <input class="inEdad" type="text"> 
+        </div>
+        <div class="boton-aceptar-cli">
+            <button class="aceptar">ACEPTAR</button> 
+        </div>              
+    </form>
+</div>
+<!-- =============================== FOOTER ===============================  -->
+<div class="contenedor-footer">
+    <footer>
+        <div class="siguenos">
+            <h2>Siguenos en nuestras redes sociales</h2> 
+        </div>
+        <div class="redes-footer">
+            <img src="imagenes/Iconos/facebook.png">
+            <img src="Imagenes/Iconos/instagram.png">
+            <img src="Imagenes/Iconos/twitter.png">
+        </div>          
+    </footer>
+    <div class="derechos">
+        <h2>© 2020 @grupo2 - Todos los derechos reservados</h2>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } 
+        else {
+        x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>

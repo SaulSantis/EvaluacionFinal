@@ -1,0 +1,637 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.0rem; 
+    line-height: 1.4em; 
+    color: #333;	
+    background-color: #efefef;
+    margin-bottom: 220px;
+  }
+/* ============================== HEADER ============================== */
+/* Agregue un color de fondo a la navegación superior */
+.topnav {
+    background-color: #1d2131;
+    overflow: hidden;
+  }
+  
+  /* Aplicar estilo a los enlaces dentro de la barra de navegación */
+  .topnav a {
+    
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Agrega una clase activa para resaltar la página actual */
+  .active {
+    background-color: #f34604;
+    color: white;
+  }
+  
+  /* Ocultar el enlace que debería abrir y cerrar la topnav en pantallas pequeñas */
+  .topnav .icon {
+    display: none;
+  }
+  
+  /* Contenedor desplegable: necesario para colocar el contenido desplegable */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Diseñe el botón desplegable para que quepa dentro del topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 45px;
+  }
+  
+  /* Aplicar estilo al contenido desplegable (oculto de forma predeterminada) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Estilo de los enlaces dentro del menú desplegable */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Agregue un fondo oscuro en los enlaces de topnav y el botón desplegable al desplazarse */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+  
+  /* Agregue un fondo gris a los enlaces desplegables al pasar el mouse */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Muestra el menú desplegable cuando el usuario mueve el mouse sobre el botón desplegable */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Cuando la pantalla tenga menos de 600 píxeles de ancho, oculte todos los enlaces, excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
+  @media screen and (max-width: 840px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* La clase "responsive" se agrega a topnav con JavaScript cuando el usuario hace clic en el icono. Esta clase hace que topnav se vea bien en pantallas pequeñas (muestra los enlaces verticalmente en lugar de horizontalmente) */
+  @media screen and (max-width: 840px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+/* ============================== Banner ============================== */
+.container-banner {
+    width: 100%;
+    height: 400px;
+
+    background-image: url(../Imagenes/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-info-banner {
+    max-width: 450px;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-info-banner h2 {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    color: #ec571c;
+    margin-bottom: 0;
+}
+.container-info-banner p {
+    line-height: 1.4;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+/* ============================== FOOTER ============================== */
+.contenedor-footer {
+    width: 100%;
+    height: 185.19;
+    background: #151933;
+    position: absolute;
+    bottom: 0;
+}
+.contenedor-footer footer {
+    max-width: 100%;
+    margin: auto;
+    color: #ffffff;
+}
+.siguenos h2 {    
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+}
+.redes-footer {
+    display: flex;
+    justify-content: center;
+}
+.redes-footer img {
+    display: flex;
+    justify-content: center;
+    height: 46px;
+    width: 36px;
+    margin: 20px;
+    padding-bottom: 12px;
+}
+.derechos {
+    width: 100%;
+    height: 40px;
+    background: #070913;
+    font-weight: 100;
+}
+.derechos h2 {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.0rem;
+    color: #9e9e9e;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+  /*------- Responsividad INDEX---------*/
+
+    .txt-obj-info, .txt-asesorias, .txt-pro-serv {
+        border-bottom: solid 1px #cecccc;
+        padding: 15px;
+    }
+
+    .titulo-obj, .titulo-asesorias, .titulo-pro-serv {
+        color: #f34604;
+    }
+
+    .contiene-todos-textos {
+        margin-left: 18%;
+        width: 64%;
+    }
+
+
+
+/* Cuando la pantalla tiene menos de 1200 píxeles de ancho, oculte todos los enlaces, 
+excepto el primero ("Inicio"). Mostrar el enlace que contiene debe abrir y cerrar el topnav (.icon) */
+@media screen and (max-width: 1500px) {
+
+   
+    adm-asis
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+  
+  /*-------Responsividad INDEX---------*/
+
+    .txt-obj-info, .txt-asesorias, .txt-pro-serv {
+        border-bottom: solid 1px #cecccc;
+        padding: 15px;
+    }
+
+    .titulo-obj, .titulo-asesorias, .titulo-pro-serv {
+        color: #f34604;
+    }
+    .contiene-todos-textos {
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    
+}
+
+/*---------CONTACTO--------*/
+
+/* Introduce entradas de estilo, selecciona elementos y áreas de texto */
+    input[type=text], select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+    }
+    
+    /* Estilo de la etiqueta para mostrar junto a las entradas */
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+    
+    /* Estilo del botón de aceptar */
+    input[type=aceptar] {
+        background-color: #f34604;
+        color: white;
+        padding: 12px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+        margin-top: 2px;
+        width: 30%;
+        height: 10px;
+        text-align: center;
+    }
+    
+    /* Estilo del contenedor */
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+    h1 {
+        color: #f34604;
+        font-size: 40px;
+    }
+    .contenedor-formulario, .caja-inscr-capa, .cajacrearpago, .caja-crea-user, .caja-edi-adm, .caja-crea-cli, 
+    .caja-edi-pro, .cont-listaasesoria, .listado, .usu-reg, .checkcaja, .tabla-pago, 
+    .caja-conte-todos-datos, .listado-usuario, .listado-visitas, .caja-login, .checkcaja {
+        margin-top: 90px;
+        padding-top: 20px;
+    }
+    .tabla-crearpago {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .usu-reg, .botones-editar {
+        margin-left: 12%;
+        max-width: 80%;
+    }
+
+    /* Columna flotante para etiquetas: 25% width */
+    .mensaje {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+    
+    /* Columna blanca flotante para entradas */
+    .caja-msje {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    /* margen de toda la caja de datos*/
+    .caja-conte-todos-datos {
+        margin-left: 10%;
+        margin-bottom: 10%;
+        width: 80%;
+    }
+    
+    /* Borrar float después de las columnas */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+   
+
+
+    @media screen and (max-width: 1500px) {
+        .caja-conte-todos-datos {
+            margin-left: 18%;
+            width: 64%;
+        }
+    }
+
+    @media screen and (max-width: 790px) {
+        .caja-conte-todos-datos {
+            margin-left: 10%;
+            width: 80%;
+        }
+        .caja-msje {
+            width: 100%;
+        }
+    }
+
+
+            /*-------------Responsividad Crear Capa---------------*/
+
+    @media screen and (max-width: 1500px) {
+            .caja-inscr-capa {
+                margin-left: 18%;
+                width: 64%;
+            }
+        }
+
+
+        @media screen and (max-width: 790px) {
+            .caja-inscr-capa {
+                margin-left: 10%;
+                width: 80%;
+            }
+        }
+           /*-------------Responsividad Listar Capacitacion---------------*/
+
+            .listado-tabla {
+                text-align: center;
+            }
+
+    @media screen and (max-width: 1500px) {
+
+            .listado {
+                margin-left: 18%;
+                width: 64%;
+                margin-bottom: 10%;
+            }
+        }
+
+
+        @media screen and (max-width: 790px) {
+            .listado {
+                margin-left: 10%;
+                width: 80%;
+            }
+        }
+            /*-------------Responsividad Listar Usuarios---------------*/
+
+
+            /* Estilo del botón de aceptar */
+            button {
+                background-color: #f34604;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: center;
+                padding: 2px;
+                width: 70%;
+                height: 20px;
+                text-align: center;
+                text-decoration: none;
+            }
+            .a {
+                background-color: #f34604;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: center;
+                padding: 2px;
+                width: 25%;
+                height: 30px;
+                text-align: center;
+                text-decoration: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            .boton-e-c, .boton-e-p, .boton-e-a {
+                background-color: #f34604;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: center;
+                padding: 10px;
+                width: 15%;
+                height: 40px;
+                text-align: center;
+            }
+            .botones-editar {
+                width: 100%;
+                margin-left: 18%;
+            }
+            tbody {
+                font-size: 20px;
+            }
+
+         
+            @media screen and (max-width: 1500px) {
+            .listado-usuario {
+                margin-left: 18%;
+                
+                margin-bottom: 5px;
+            }
+            h1 {
+                font-size: 25px;
+            }
+            .listado-usuario {
+                margin-left: 5%;
+            }
+        }
+
+
+       
+        @media screen and (max-width: 790px) {
+            
+            tbody{
+            display: table-row-group;
+            vertical-align: middle;
+            border-color: inherit;
+            }
+        }
+
+         /*-------------Responsividad Crear usuario---------------*/
+
+    @media screen and (max-width: 1500px) {
+            .caja-crea-user {
+                margin-left: 18%;
+                width: 64%;
+            }
+        }
+
+
+        @media screen and (max-width: 790px) {
+            .caja-crea-user {
+                margin-left: 10%;
+                width: 80%;
+            }
+        }
+        /*-------------Responsividad Editar Cliente---------------*/
+
+        .boton-aceptar-cli {
+            margin-top: 3%;
+            margin-left: 10%;
+            margin-bottom: 10%;
+        }
+        @media screen and (max-width: 1500px) {
+                .caja-crea-cli {
+                    margin-left: 18%;
+                    width: 64%;
+                }
+            }
+    
+    
+            @media screen and (max-width: 790px) {
+                .caja-crea-cli {
+                    margin-left: 10%;
+                    width: 80%;
+                }
+            }
+
+             /*-------------Responsividad Editar Administrativo---------------*/
+
+        .boton-aceptar-admi {
+            margin-top: 3%;
+            margin-left: 10%;
+            margin-bottom: 10%;
+        }
+        .adm-asist, .reg-asis {
+            margin: 8%;
+        }
+
+        @media screen and (max-width: 1500px) {
+                .caja-edi-adm {
+                    margin-left: 18%;
+                    width: 64%;
+                }
+            }
+    
+    
+            @media screen and (max-width: 790px) {
+                .caja-edi-adm {
+                    margin-left: 10%;
+                    width: 80%;
+                }
+            }
+
+        /*-------------Responsividad Editar Profesional---------------*/
+
+        .boton-aceptar-pro {
+            margin-top: 3%;
+            margin-left: 10%;
+            margin-bottom: 10%;
+        }
+
+        @media screen and (max-width: 1500px) {
+                .caja-edi-pro {
+                    margin-left: 18%;
+                    width: 64%;
+                }
+            }
+
+        @media screen and (max-width: 790px) {
+                .caja-edi-pro {
+                    margin-left: 10%;
+                    width: 80%;
+                }
+            }
+
+            /*-------------CREAR PAGO---------------*/
+            .tabla-pago {
+                margin-left: 20%;
+                margin-right: 20%;
+                width: 60%;
+                margin-top: 80px;
+            }
+
+            /*-------------CREAR PAGO---------------*/
+            .listado-tablapago {
+                
+                text-align: left;
+            }
+            .menu-pago {
+                margin-right: 10%;
+                padding:10%;
+            }
+            th, td {
+                padding-bottom: 5px;
+                padding-left: 10px;
+                font-size: 90%;
+            }
+
+            /*-------------LISTADO ASESORIA---------------*/
+            .cont-listaasesoria {
+                margin-left: 10%;
+                margin-right: 10%;
+                max-width: 80%;
+            }
+            .btna, .btnb, .btnc {
+                float: left;
+                margin-left: 15px;
+                padding: 10px;
+            }
+            .botones-lisasesoria{
+                background-color: #f34604;
+            }
+
+
+
+ /*-------------LISTADO VISITAS---------------*/
+            .listado-visitas {
+                margin-left: 15%;
+                max-width: 70%;
+            }
+            .tam-btn-lis-vis {
+                width: 100%;
+            }
+
+
+ /*-------------LOGIN---------------*/
+            .caja-login {
+                max-width: 40%;
+                margin-left: 30%;
+            }
+
+ /*-------------RESPONDER CHECKLIST---------------*/
+            .checkcaja {
+                max-width: 40%;
+                margin-left: 30%;
+            }

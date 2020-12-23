@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitas - Accidentes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    
+    
+</head>
+<body>
+    <div style="width: 90%; height: 40%;">
+        <canvas id ="graficoacci"></canvas>
+    </div>
+    <script>
+    let miCanvas=document.getElementById("graficoacci").getContext("2d");
+   
+    var chartAcc = new Chart(miCanvas,{
+       type: "line",
+       data: {
+           labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo,","Junio", "Julio", "Agosto","Septiembre", "Octubre",
+           "Noviembre", "Diciembre"],
+           datasets: [
+                   {
+                       label: "Cantidad de Accidentes",
+                       backgroundColor:"rgb(127, 255, 212)",
+                       borderColor:"rgb(0,255,0)",
+                       data:[50,12,45,18,17,56,45,56,78,23,12,23]
+                   },
+                   {
+                       label: "Cantidad de Visitas",
+                       backgroundColor:"rgb(100, 149, 237)",
+                       borderColor:"rgb(0,255,0)",
+                       data:[200,250,250,230,150,127,260,100,150,180]
+                   }
+           ]
+       }
+    })
+</script>
+</body>
+</html>

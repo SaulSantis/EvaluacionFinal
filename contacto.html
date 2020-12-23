@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sh384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>   
+    <body>   
+         <!-- =============================== HEADER =============================== -->         
+       <div class="topnav" id="myTopnav">
+        <a href="#"></a>    
+        <a href="index.html" >INICIO</a>
+                <div class="dropdown">
+                    <button class="dropbtn">CAPACITACIONES<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearusuario.html">CREAR USUARIO</a>
+                        <a href="listadousuarios.html">LISTADO DE USUARIOS</a>
+                        <a href="editarcliente.html">EDITAR CLIENTE</a>
+                        <a href="editaradministrativo.html">EDITAR ADMINISTRATIVO</a>
+                        <a href="editarprofesional.html">EDITAR PROFESIONAL</a>
+                    </div>
+                </div>
+                     
+                <div class="dropdown">
+                    <button class="dropbtn">ASESORIAS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="listadoasesorias.html">LISTADO DE ASESORIAS</a>
+                        <a href="reportes.html">REPORTES</a>
+                        <a href="listadovisitas.html">LISTADO DE VISITAS</a>
+                        <a href="responderchecklist.html" >CHECKLIST</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PAGOS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearpago.html">CREAR PAGO</a>
+                        <a href="listadopago.html">LISTADO DE PAGOS</a>
+                    </div>
+                </div>
+                
+                                
+                        <a href="contacto.html" class="active">CONTACTO</a>
+                        <a href="login.html">LOGIN</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            
+        </div>
+
+    <!--=============================== FORMULARIO ===============================-->
+        <div class="contenedor-formulario">
+            <div class="caja">
+                <div class="caja-conte-todos-datos">
+                    <div>
+                        <h1>Contacto</h1>
+                        <form>
+                            <label for="nombre">Nombre de contacto</label>
+                            <input type="text" id="nombre" name="nombrecom" placeholder="Nombre completo...">
+                        
+                            <label for="correo">Correo electrónico</label>
+                            <input type="text" id="correo" name="correo-elec" placeholder="ej: correo@mail.com">
+                        
+                            <label for="telefeno">Teléfono</label>
+                            <input type="text" id="telefeno" name="telefono" placeholder="ej: 987654321">
+                        </form>
+                    </div>        
+                    <div class="row">
+                        <div class="mensaje">
+                            <label for="msje">Mensaje</label>
+                        </div>
+                    </div>
+        
+                    <div class="caja-msje">
+                        <textarea id="caja-mensajes" name="msje" placeholder="dejanos tu comentario..." style="height:200px"></textarea>
+                    </div>
+        
+                    <div class="row">
+                        <form>
+                            <input type="aceptar" value="Aceptar">
+                        </form>
+                    </div>
+                </div>
+                <div class="enlaces-contacto">
+                    <ul>
+                        <li>
+                            <a href="index.html">Volver a Inicio</a>
+                        </li>
+                        <li>
+                            <a href="crearcapacitacion.html" target="_blank">Inscripción a Capacitación</a>                   
+                        </li>
+                    </ul>
+                </div>
+            
+            </div>
+            </div>
+            
+        
+    <!-- =============================== FOOTER ===============================  -->
+    <div class="contenedor-footer">
+        <footer>
+            <div class="siguenos">
+                <h2>Siguenos en nuestras redes sociales</h2> 
+            </div>
+            <div class="redes-footer">
+                <img src="imagenes/Iconos/facebook.png">
+                <img src="Imagenes/Iconos/instagram.png">
+                <img src="Imagenes/Iconos/twitter.png">
+            </div>          
+        </footer>
+        <div class="derechos">
+            <h2>© 2020 @grupo2 - Todos los derechos reservados</h2>
+        </div>
+    </div>
+</body>
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } 
+        else {
+        x.className = "topnav";
+        }
+    }
+
+</script>
+</html>

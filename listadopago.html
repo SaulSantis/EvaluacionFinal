@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Pago</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">    
+
+</head>   
+    <body>      
+         <!-- =============================== HEADER =============================== -->         
+       <div class="topnav" id="myTopnav">
+        <a href="#"></a>    
+        <a href="index.html" >INICIO</a>
+                <div class="dropdown">
+                    <button class="dropbtn">CAPACITACIONES<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearusuario.html">CREAR USUARIO</a>
+                        <a href="listadousuarios.html">LISTADO DE USUARIOS</a>
+                        <a href="editarcliente.html">EDITAR CLIENTE</a>
+                        <a href="editaradministrativo.html">EDITAR ADMINISTRATIVO</a>
+                        <a href="editarprofesional.html">EDITAR PROFESIONAL</a>
+                    </div>
+                </div>
+                     
+                <div class="dropdown">
+                    <button class="dropbtn">ASESORIAS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="listadoasesorias.html">LISTADO DE ASESORIAS</a>
+                        <a href="reportes.html">REPORTES</a>
+                        <a href="listadovisitas.html">LISTADO DE VISITAS</a>
+                        <a href="responderchecklist.html" >CHECKLIST</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PAGOS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearpago.html">CREAR PAGO</a>
+                        <a href="listadopago.html" class="active">LISTADO DE PAGOS</a>
+                    </div>
+                </div>
+                
+                                
+                        <a href="contacto.html">CONTACTO</a>
+                        <a href="login.html">LOGIN</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            
+        </div>
+
+
+        
+        <!--Alternar entre agregar y eliminar la clase "responsive" a topnav cuando el usuario hace clic en el ícono-->
+        <script src="crearpago.js"></script>        
+    <div class="listado">
+        <h1 class="listado-titulo">Listado de pagos</h1>
+        <table class="listado-tablapago">
+            <tr class="menu-pago">
+                <th>Id de pago</th>
+                <th>Mes</th>
+                <th>Año</th>
+                <th>Rut</th>
+                <th>Nombre</th>
+            </tr>
+            <br>
+            <tr>
+                <td>266</td>
+                <td>Marzo</td>
+                <td>2019</td>
+                <td>78626820-0</td>
+                <td>Ascensores Chile Ltda.</td>
+            </tr>
+            <br>
+            <tr>
+                <td>270</td>
+                <td>Julio</td>
+                <td>2019</td>
+                <td>90793221-3</td>
+                <td>Abogados y Cía. Ltda.</td>
+            </tr>            <tr>
+                <td>286</td>
+                <td>Octubre</td>
+                <td>2019</td>
+                <td>86443762-0</td>
+                <td>Fruna Ltda.</td>
+            </tr>            <tr>
+                <td>298</td>
+                <td>Diciembre</td>
+                <td>2019</td>
+                <td>76319407-3</td>
+                <td>Seguridad S.A.</td>
+            </tr>            
+            <tr>
+                <td>326</td>
+                <td>Marzo</td>
+                <td>2020</td>
+                <td>88789654-3</td>
+                <td>Peña Ltda.</td>
+            </tr>
+        </table>
+        <br>
+        <button>Agregar Pago <a href="crearpago.html"> Aquí </a></button>
+    </div>
+       <!-- =============================== FOOTER ===============================  -->
+    <div class="contenedor-footer">
+        <footer>
+            <div class="siguenos">
+                <h2>Siguenos en nuestras redes sociales</h2> 
+            </div>
+            <div class="redes-footer">
+                <img src="imagenes/Iconos/facebook.png">
+                <img src="Imagenes/Iconos/instagram.png">
+                <img src="Imagenes/Iconos/twitter.png">
+            </div>          
+        </footer>
+        <div class="derechos">
+            <h2>© 2020 @grupo2 - Todos los derechos reservados</h2>
+        </div>
+    </div> 
+</body>
+</html>

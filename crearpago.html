@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <title>Crear pago</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+     <!-- =============================== HEADER =============================== -->         
+     <div class="topnav" id="myTopnav">
+        <a href="#"></a>    
+        <a href="index.html" >INICIO</a>
+                <div class="dropdown">
+                    <button class="dropbtn">CAPACITACIONES<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearusuario.html">CREAR USUARIO</a>
+                        <a href="listadousuarios.html">LISTADO DE USUARIOS</a>
+                        <a href="editarcliente.html">EDITAR CLIENTE</a>
+                        <a href="editaradministrativo.html">EDITAR ADMINISTRATIVO</a>
+                        <a href="editarprofesional.html">EDITAR PROFESIONAL</a>
+                    </div>
+                </div>
+                       
+                <div class="dropdown">
+                    <button class="dropbtn">ASESORIAS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="listadoasesorias.html">LISTADO DE ASESORIAS</a>
+                        <a href="reportes.html">REPORTES</a>
+                        <a href="listadovisitas.html">LISTADO DE VISITAS</a>
+                        <a href="responderchecklist.html" >CHECKLIST</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PAGOS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearpago.html" class="active">CREAR PAGO</a>
+                        <a href="listadopago.html">LISTADO DE PAGOS</a>
+                    </div>
+                </div>
+                
+                                
+                        <a href="contacto.html">CONTACTO</a>
+                        <a href="login.html">LOGIN</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            
+        </div>
+
+    <div >
+        <form action="" method="" id="form1" name="" onsubmit="return validacion()">
+            <div class="tabla-pago">
+            <table >
+                <h2>Realizar pago</h2>
+                <br>
+                <tr>
+                <td>Monto de pago</td>
+                <td><input type = "text" id ="montopago"></td>
+                </tr>
+                <tr>
+                <td>Mes de pago</td>
+                <td><input type="text" id="mespago"></td>
+                </tr>
+                <tr>
+                <td>Año de pago</td>
+                <td><input type="text" name="añopago" id="añopago" ></td>
+                </tr>
+                <tr>
+                <td>Rut Cliente</td>
+                <td><input type="text" id="rutcli" ></td>
+                </tr>
+                <tr>
+                <td> <input type="submit" id="btn" form = "form1" onclick="validacion()"></td>
+                </tr>
+            </table>
+            </div>
+       </form>
+        <br>
+        <!--<div id="new Date"></div>-->
+    </div> 
+ <!-- =============================== FOOTER ===============================  -->
+ <div class="contenedor-footer">
+    <footer>
+        <div class="siguenos">
+            <h2>Siguenos en nuestras redes sociales</h2> 
+        </div>
+        <div class="redes-footer">
+            <img src="imagenes/Iconos/facebook.png">
+            <img src="Imagenes/Iconos/instagram.png">
+            <img src="Imagenes/Iconos/twitter.png">
+        </div>          
+    </footer>
+    <div class="derechos">
+        <h2>© 2020 @grupo2 - Todos los derechos reservados</h2>
+    </div>
+</div>
+<script src="crearpago.js"></script>
+</body>
+</html>

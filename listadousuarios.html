@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Usuarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">    
+
+</head>   
+    <body>      
+         <!-- =============================== HEADER =============================== -->         
+       <div class="topnav" id="myTopnav">
+        <a href="#"></a>    
+        <a href="index.html" >INICIO</a>
+                <div class="dropdown">
+                    <button class="dropbtn">CAPACITACIONES<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearusuario.html">CREAR USUARIO</a>
+                        <a href="listadousuarios.html" class="active">LISTADO DE USUARIOS</a>
+                        <a href="editarcliente.html">EDITAR CLIENTE</a>
+                        <a href="editaradministrativo.html">EDITAR ADMINISTRATIVO</a>
+                        <a href="editarprofesional.html">EDITAR PROFESIONAL</a>
+                    </div>
+                </div>
+                 
+                <div class="dropdown">
+                    <button class="dropbtn">ASESORIAS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="listadoasesorias.html">LISTADO DE ASESORIAS</a>
+                        <a href="reportes.html">REPORTES</a>
+                        <a href="listadovisitas.html">LISTADO DE VISITAS</a>
+                        <a href="responderchecklist.html" >CHECKLIST</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PAGOS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearpago.html">CREAR PAGO</a>
+                        <a href="listadopago.html">LISTADO DE PAGOS</a>
+                    </div>
+                </div>
+                
+                                
+                        <a href="contacto.html">CONTACTO</a>
+                        <a href="login.html">LOGIN</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            
+        </div>
+
+
+        <div class="usu-reg">
+        <h1>Usuarios Registrados</h1>
+        <br>
+        <table class="listado-usuarios">
+            <tr class="menu-usuarios">
+                <th>Run </th>
+                <th>Nombre y Apellidos</th>
+                <th>Tipo de Usuario</th>
+                <th>Eliminar Usuario</th>
+                <th>Modificar Usuario</th>
+                
+            </tr>
+            <tr>
+                <td>15436864-k</td>
+                <td>Saul Santibañez</td>
+                <td>Administrativo</td>
+                <td><button>Eliminar </button></td>
+                <td><button>Modificar</button></td>
+            </tr>
+            <tr>
+                <td>16144398-0</td>
+                <td>Catherine Poblete</td>
+                <td>Profesional</td>
+                <td><button>Eliminar </button></td>
+                <td><button>Modificar</button></td>
+
+            </tr>
+            <tr>
+                <td>19567234-6</td>
+                <td>Cristian Diaz</td>
+                <td>Cliente</td>
+                <td><button>Eliminar </button></td>
+                <td><button>Modificar</button></td>
+                
+            </tr>
+            <tr>
+                <td>19456987-8</td>
+                <td>Alejandro Almarza</td>
+                <td>Cliente</td>
+                <td><button>Eliminar </button></td>
+                <td><button>Modificar</button></td>
+            </tr>
+            <tr>
+                <td>16456987-8</td>
+                <td>Ricardo Olguin</td>
+                <td>Cliente</td>
+                <td><button>Eliminar </button></td>
+                <td><button>Modificar</button></td>
+            </tr>
+            
+        </table>
+    </div >
+    <div class="botones-editar">
+        <button class="a">Editar Cliente <a href="editarcliente.html"> Aquí </a></button>
+        <button class="a">Editar Administrativo <a href="editaradministrativo.html"> Aquí </a></button>
+        <button class="a">Editar Profesional <a href="editarprofesional.html"> Aquí </a></button>
+    </div>
+        <!-- =============================== FOOTER ===============================  -->
+    <div class="contenedor-footer">
+        <footer>
+            <div class="siguenos">
+                <h2>Siguenos en nuestras redes sociales</h2> 
+            </div>
+            <div class="redes-footer">
+                <img src="imagenes/Iconos/facebook.png">
+                <img src="Imagenes/Iconos/instagram.png">
+                <img src="Imagenes/Iconos/twitter.png">
+            </div>          
+        </footer>
+        <div class="derechos">
+            <h2>© 2020 @grupo2 - Todos los derechos reservados</h2>
+        </div>
+    </div>
+
+    <script>
+            function myFunction() {
+            var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } 
+                else {
+                x.className = "topnav";
+                }
+            }
+        
+    </script>
+</body>
+</html>

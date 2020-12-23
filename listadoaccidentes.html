@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Accidentes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="https://jqueryvalidation.org/files/lib/jquery-1.11.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   
+    
+    <script src="listadoaccidentes.js"></script>
+   
+</head>   
+    <body>      
+         <!-- =============================== HEADER =============================== -->         
+       <div class="topnav" id="myTopnav">
+        <a href="#"></a>    
+        <a href="index.html" >INICIO</a>
+                <div class="dropdown">
+                    <button class="dropbtn">CAPACITACIONES<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearusuario.html">CREAR USUARIO</a>
+                        <a href="listadousuarios.html">LISTADO DE USUARIOS</a>
+                        <a href="editarcliente.html">EDITAR CLIENTE</a>
+                        <a href="editaradministrativo.html">EDITAR ADMINISTRATIVO</a>
+                        <a href="editarprofesional.html">EDITAR PROFESIONAL</a>
+                    </div>
+                </div>
+                      
+                <div class="dropdown">
+                    <button class="dropbtn">ASESORIAS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="listadoasesorias.html">LISTADO DE ASESORIAS</a>
+                        <a href="reportes.html">REPORTES</a>
+                        <a href="listadovisitas.html">LISTADO DE VISITAS</a>
+                        <a href="responderchecklist.html">CHECKLIST</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PAGOS<i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="crearpago.html">CREAR PAGO</a>
+                        <a href="listadopago.html">LISTADO DE PAGOS</a>
+                    </div>
+                </div>
+                
+                                
+                        <a href="contacto.html">CONTACTO</a>
+                        <a href="login.html">LOGIN</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            
+        </div>
+
+<div class="caja-conte-todos-datos">
+    
+    <h1>Listado de Accidentes</h1>
+    <form id="formulario" action="" method="get">
+        <label for="idacc">(*)Id de Accidente </label>
+        <input type="text" id="idacc" name="idacc" >
+        <br>
+        <label for="fechaacc">(*)Fecha</label>
+        <input type="text" id="fechaacc" name="fechaacc" readonly = "readonly" >
+    
+        <label for="horaacc">(*)Hora</label>
+        <input type="time" id="time" name="hora">
+         
+        <br>
+        <label for="lugaracc">(*)Lugar</label>
+        <input type="text" id="lugaracc" name="lugaracc">
+
+        <label for="origenacc">(*)Origen</label>
+        <input type="text" id="origenacc" name="origenacc" >
+
+        <label for="clienteacc">(*)Nombre Cliente</label>
+        <input type="text" id="clienteacc" name="cliente" placeholder="Nombre del cliente">
+        <p>
+        <br>
+        (*)Campos obligatorio
+        </p>   
+        <div class="row">
+            <label type="text">Consecuencias</label>
+        </div>
+        <div>
+            <textarea id="caja-mensajes" name="msje" placeholder="dejanos tu comentario..." style="height:200px"></textarea>
+        </div>
+        
+            <form>
+                <input class="submit" type="submit" value="Enviar" id="btnvalidar" >
+                <div id="contenedor_errores"></div>
+            </form>
+        
+    </form>
+</div>
+<!-- =============================== FOOTER ===============================  -->
+<div class="contenedor-footer">
+    <footer>
+        <div class="siguenos">
+            <h2>Siguenos en nuestras redes sociales</h2> 
+        </div>
+        <div class="redes-footer">
+            <img src="imagenes/Iconos/facebook.png">
+            <img src="Imagenes/Iconos/instagram.png">
+            <img src="Imagenes/Iconos/twitter.png">
+        </div>          
+    </footer>
+    <div class="derechos">
+        <h2>© 2020 @grupo2 - Todos los derechos reservados</h2>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Asesorías</title>
+    <link rel="stylesheet" id="cssfile" href="listadoasesorias.css"  >
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    
+    <script src="listadoasesorias.js"></script>
+</head>
+<body>
+ <!-- =============================== HEADER =============================== -->         
+ <div class="topnav" id="myTopnav">
+    <a href="#"></a>    
+    <a href="index.html" >INICIO</a>
+            <div class="dropdown">
+                <button class="dropbtn">CAPACITACIONES<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="crearusuario.html">CREAR USUARIO</a>
+                    <a href="listadousuarios.html">LISTADO DE USUARIOS</a>
+                    <a href="editarcliente.html">EDITAR CLIENTE</a>
+                    <a href="editaradministrativo.html">EDITAR ADMINISTRATIVO</a>
+                    <a href="editarprofesional.html">EDITAR PROFESIONAL</a>
+                </div>
+            </div>
+                   
+            <div class="dropdown">
+                <button class="dropbtn">ASESORIAS<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="listadoasesorias.html">LISTADO DE ASESORIAS</a>
+                    <a href="reportes.html">REPORTES</a>
+                    <a href="listadovisitas.html">LISTADO DE VISITAS</a>
+                    <a href="responderchecklist.html" >CHECKLIST</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">PAGOS<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="crearpago.html" class="active">CREAR PAGO</a>
+                    <a href="listadopago.html">LISTADO DE PAGOS</a>
+                </div>
+            </div>
+            
+                            
+                    <a href="contacto.html">CONTACTO</a>
+                    <a href="login.html">LOGIN</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        
+    </div>
+
+
+    <div class="cont-listaasesoria" >
+        <h1 >Listado de Asesorías</h1>
+        <table id="tab" >
+            <tr >
+                <th>Id Asesoría</th>
+                <th>Fecha</th>
+                <th>Nombre Cliente</th>
+                <th>Nombre del Profesional</th>
+                <th> Actividades de Mejora </th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>07-12-2020</td>
+                <td>Sociedad Juan Perez</td>
+                <td>Antonio Hernandez</td>
+                <td><button id="boton1"> Mejoras </button></td> 
+       
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>09-12-2020</td>
+                <td>Fruna limitada</td>
+                <td>Jesus Lopez</td>
+                <td><button id="boton2"> Mejoras </button></td> 
+               
+            </tr>
+            <tr>
+                <td>089</td>
+                <td>07-10-2020</td>
+                <td>Lider</td>
+                <td>Alondra Gonzalez</td>
+                <td><button id="boton3"> Mejoras </button></td> 
+           
+            </tr>      
+    
+               </table>
+                       
+        <div class="botones-lisasesoria">
+            <p class="btna"><input type="button" id="btn1" value="Clickea para estilo 1"></p>
+            <p class="btnb"><input type="button" id="btn2" value="Clickea para estilo 2"></p>
+            <p class="btnc"><input type="button" id="btn3" value="Clickea para estilo 3"></p>
+        </div>
+        <br>
+      <br>
+      <br>
+       <div class="listas">
+        <ul id="lista1">
+            <p> ID 001</p>
+            <li>Mejoras la limpieza de los departamentos</li>
+            <li>Organizar horarios de entrada y salida administrativos</li>
+        </ul>
+        <br>
+        <ul id="lista2">
+            <p> ID 005</p>
+            <li>Mejoras la limpieza de los departamentos</li>
+            <li>Organizar horarios de entrada y salida administrativos</li>
+            <li>Aumentar la cantidad de actividades recreativas en la empresa</li>
+            <li>Entregar bonos y pagar horas extras</li>
+        </ul>
+      <br>
+        <ul id="lista3">
+            <p> ID 089</p>
+            <li>Mejoras la limpieza de los departamentos</li>
+            <li>Organizar horarios de entrada y salida administrativos</li>
+            <li>Aumentar la cantidad de actividades recreativas en la empresa</li>
+        </ul>
+        </div>  
+        
+        
+    </div>
+<!-- =============================== FOOTER ===============================  -->
+<div class="contenedor-footer">
+    <footer>
+        <div class="siguenos">
+            <h2>Siguenos en nuestras redes sociales</h2> 
+        </div>
+        <div class="redes-footer">
+            <img src="imagenes/Iconos/facebook.png">
+            <img src="Imagenes/Iconos/instagram.png">
+            <img src="Imagenes/Iconos/twitter.png">
+        </div>          
+    </footer>
+    <div class="derechos">
+        <h2>© 2020 @grupo2 - Todos los derechos reservados</h2>
+    </div>
+</div>
+    
+    
+</body>
+</html>

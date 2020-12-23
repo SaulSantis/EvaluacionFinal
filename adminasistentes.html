@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Asistentes</title>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    
+    <script src="adminasistentes.js"></script>
+</head>
+
+ 
+<body>      
+    <!-- =============================== HEADER =============================== -->         
+    <div class="topnav" id="myTopnav">
+      <a href="#"></a>    
+      <a href="index.html" >INICIO</a>
+              <div class="dropdown">
+                  <button class="dropbtn" >CAPACITACIONES<i class="fa fa-caret-down"></i></button>
+                  <div class="dropdown-content">
+                      <a href="crearusuario.html">CREAR USUARIO</a>
+                      <a href="listadousuarios.html">LISTADO DE USUARIOS</a>
+                      <a href="editarcliente.html">EDITAR CLIENTE</a>
+                      <a href="editaradministrativo.html">EDITAR ADMINISTRATIVO</a>
+                      <a href="editarprofesional.html">EDITAR PROFESIONAL</a>
+                  </div>
+              </div>
+               
+              <div class="dropdown">
+                  <button class="dropbtn">ASESORIAS<i class="fa fa-caret-down"></i></button>
+                  <div class="dropdown-content">
+                      <a href="listadoasesorias.html">LISTADO DE ASESORIAS</a>
+                      <a href="reportes.html">REPORTES</a>
+                      <a href="listadovisitas.html">LISTADO DE VISITAS</a>
+                      <a href="responderchecklist.html">CHECKLIST</a>
+                  </div>
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn">PAGOS<i class="fa fa-caret-down"></i></button>
+                  <div class="dropdown-content">
+                      <a href="crearpago.html">CREAR PAGO</a>
+                      <a href="listadopago.html">LISTADO DE PAGOS</a>
+                  </div>
+              </div>
+              
+                              
+                      <a href="contacto.html">CONTACTO</a>
+                      <a href="login.html">LOGIN</a>
+                      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          
+      </div>
+
+    <div class="adm-asist">
+        <h1>Lista Asistentes</h1>
+        <table  id="tablaasis" class="display" style="width:100%" >
+          <thead>
+          <tr>
+            <th>ID asistente </th>
+            <th>Correo</th>
+            <th>Telefono</th> 
+            <th>Eliminar<a></a></th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>15436864-k</td>
+                <td>Saul Santibañez</td>
+                <td>Administrativo</td>
+                <td><button>Eliminar </button></td>
+            </tr>
+            <tr>
+                <td>16144398-0</td>
+                <td>Catherine Poblete</td>
+                <td>Profesional</td>
+                <td><button>Eliminar </button></td>
+            </tr>
+            <tr>
+                <td>19567234-6</td>
+                <td>Cristian Diaz</td>
+                <td>Cliente</td>
+                <td><button>Eliminar </button></td>
+            </tr>
+            <tr>
+                <td>19456987-8</td>
+                <td>Alejandro Almarza</td>
+                <td>Cliente</td>
+                <td><button>Eliminar </button></td>
+            </tr>
+            <tr>
+                <td>16456987-8</td>
+                <td>Ricardo Olguin</td>
+                <td>Cliente</td>
+                <td><button>Eliminar </button></td>
+            </tr>
+          </tbody> 
+        </table>
+     </div>  
+     
+     <form  id="reg-asis" class="reg-asis" name="reg-asis" method="get" action="" >
+          <h2>Por favor ingrese los datos del asistente</h2>
+          <p>
+            <label for="idasis">ID Asistente (*)</label>
+            <input  id="idasis" name="idasis" type="text" >
+          </p>
+          <p>
+            <label for="nomcom">Nombre Completo (*)</label>
+            <input id="nomcom" type="text" name="nomcom" >
+          </p>
+          <p>
+            <label for="edad">Edad (*)</label>
+            <input id="edad" type="text" name="edad" >
+          </p>
+          <p>
+            <label for="email">E-Mail <span>(required)</span></label>
+            <input id="email" type="email" name="email" >
+         </p>
+         <br>
+          <p>
+            <label for="codarea"> Código área(*)</label>
+            <select  >
+              <option value="disabled" selected>Seleccione Codigo de Area</option>
+              <option value="codchile">Chile +569 </option>
+            </select>
+          </p>
+          <p>
+          <label for="tel">Ingrese Telefono </label>
+          <input type="text" name="tel" id="tel">
+          </p>
+          <label> Tipo de usuario</label>
+          <select id="tipoUsuario"  name="Tipousuario" required >
+              <option value="disabled" selected>Datos Capacitación</option>
+              <option value="Cliente1">Fecha:21/12/2020, Cliente: Sociedad Juan Peréz</option>
+              <option value="Cliente2">Fecha:04/12/2020, Cliente: Fruna Limitada</option>
+              <option value="Cliente3">Fecha:01/11/2020, Cliente: Walmart</option>
+          </select>
+          <p>
+            <input class="submit" id="btnvalidar" type="submit" onclick="enviarformulario()" value="Enviar">
+          </p>
+      </form>
+      
+
+     
+
+    <!--Alternar entre agregar y eliminar la clase "responsive" a topnav cuando el usuario hace clic en el ícono-->
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } 
+            else {
+            x.className = "topnav";
+            }
+        }
+    </script> 
+    <!-- =============================== FOOTER ===============================  -->
+    <div class="contenedor-footer">
+      <footer>
+          <div class="siguenos">
+              <h2>Siguenos en nuestras redes sociales</h2> 
+          </div>
+          <div class="redes-footer">
+              <img src="imagenes/Iconos/facebook.png">
+              <img src="Imagenes/Iconos/instagram.png">
+              <img src="Imagenes/Iconos/twitter.png">
+          </div>          
+      </footer>
+      <div class="derechos">
+          <h2>© 2020 @grupo2 - Todos los derechos reservados</h2>
+      </div>
+  </div>
+</body>
+</html>
