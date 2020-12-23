@@ -43,7 +43,7 @@ disponibilidad de información para la empresa y sus clientes. Se crea una plata
 
 Ruta de repositorios GitHub:
 
-- Saúl Santis: https://github.com/SaulSantis/Evaluacion-Final
+- Saúl Santis: https://github.com/SaulSantis/EvaluacionFinal.git
 - Juan Pablo Ibáñez: https://github.com/Jpablo9006/Individual5_Dweb.git
 - Cristian Díaz: https://github.com/cristiandiazm/Awake.git
 - Catherine Poblete: https://github.com/Cathy-P3/Prueba.git
